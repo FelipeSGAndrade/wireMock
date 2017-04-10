@@ -1,0 +1,14 @@
+{
+  "priority": 5,
+  "request": {
+    "method": "GET",
+    "urlPattern": "/list"
+  },
+  "response": {
+    "status": 200,
+    "bodyFileName": "list/empty.json",
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}

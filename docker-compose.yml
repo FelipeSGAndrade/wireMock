@@ -1,0 +1,12 @@
+version: '2'
+services:
+
+  wiremock:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    container_name: wiremock
+    volumes:
+      - ./data:/wiremock/data
+    ports:
+      - 3000:3000

@@ -1,0 +1,16 @@
+{
+  "priority": 1,
+  "scenarioName": "ToDoList",
+  "requiredScenarioState": "newItem",
+  "request": {
+    "method": "GET",
+    "urlPattern": "/list"
+  },
+  "response": {
+    "status": 200,
+    "bodyFileName": "list/oneItem.json",
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}

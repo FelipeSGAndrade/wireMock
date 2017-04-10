@@ -1,0 +1,14 @@
+{
+  "scenarioName": "ToDoList",
+  "newScenarioState": "newItem",
+  "request": {
+    "method": "POST",
+    "urlPattern": "/list/items",
+    "bodyPatterns" : [ {
+      "equalToJson" : "{ \"name\": \"teste\", \"done\": false }"
+    }]
+  },
+  "response": {
+    "status": 201
+  }
+}

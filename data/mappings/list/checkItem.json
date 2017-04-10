@@ -1,0 +1,15 @@
+{
+  "scenarioName": "ToDoList",
+  "requiredScenarioState": "newItem",
+  "newScenarioState": "checkedItem",
+  "request": {
+    "method": "PATCH",
+    "urlPattern": "/list/items/1",
+    "bodyPatterns" : [ {
+      "equalToJson" : "{ \"done\": true }"
+    }]
+  },
+  "response": {
+    "status": 204
+  }
+}
